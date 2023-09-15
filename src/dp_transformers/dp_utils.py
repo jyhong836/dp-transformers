@@ -188,7 +188,7 @@ class OpacusDPTrainer(Trainer):
             prv_accountant=self.prv_accountant
         )
         callbacks = kwargs.pop('callbacks', [])
-        callbacks.append(self.dp_callback)
+        callbacks =  [self.dp_callback] + callbacks
         kwargs['callbacks'] = callbacks
         super().__init__(model=model, args=args, train_dataset=train_dataset, **kwargs)
 
