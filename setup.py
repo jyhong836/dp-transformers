@@ -29,11 +29,11 @@ setup(
     },
     install_requires=[
         "transformers>=4.20.1,<=4.28.1",
-        "datasets>=2.0.0,<=2.6.1",
+        # "datasets>=2.0.0,<=2.6.1",
         "opacus>=1.1.3,<1.3.0",
         "prv-accountant<0.2.0",
         # "torch>=1.9.1,<1.13.0",
-        "torch>=1.9.1,<=1.13.1",
+        # "torch>=1.9.1,<=1.13.1",
     ],
     test_suite="tests",
     zip_safe=False
